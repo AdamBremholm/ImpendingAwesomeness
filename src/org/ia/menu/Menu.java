@@ -12,11 +12,11 @@ public class Menu {
 
 
 
-    public void run() {
-
-    }
-
     public void show() {
+
+        for (int i = 0; i < textOptions.size(); i++) {
+            System.out.println(i + 1 + ". " + textOptions.get(i));
+        }
 
 
     }
@@ -24,6 +24,7 @@ public class Menu {
         System.out.println("Make a choice");
         Scanner sc = new Scanner(System.in);
         return sc.nextInt();
+        //Todo: needs inputmanager
 
     }
 
