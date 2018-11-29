@@ -31,7 +31,6 @@ public class Menu {
         System.out.println("Make a choice");
         return handler.inputManager.verifyInt(1, textOptions.size());
 
-        //Todo: needs inputmanager
 
     }
 
