@@ -8,17 +8,17 @@ public class Entity {
     private int defense;
     private int strength;
     private int experience;
-    List <Action> moveList = new List<Action>();
+    //List <Action> moveList = new List<Action>();
 
-    public Entity(int hp, int energy, int defense, int strength, int experience, List<Action> moveList) {
+    public Entity(int hp, int energy, int defense, int strength, int experience/*, List<Action> moveList*/) {
         this.hp = hp;
         this.energy = energy;
         this.defense = defense;
         this.strength = strength;
         this.experience = experience;
-        this.moveList = moveList;
+        //this.moveList = moveList;
     }
-
+/*
     public List<Action> getMoveList() {
         return moveList;
     }
@@ -26,7 +26,7 @@ public class Entity {
     public void setMoveList(List<Action> moveList) {
         this.moveList = moveList;
     }
-
+*/
     public int getEnergy() {
         return energy;
     }
@@ -68,9 +68,9 @@ public class Entity {
     }
 
 }
-
+/*
     public void makeAction(action){
 
     }
-}
+    */
 
