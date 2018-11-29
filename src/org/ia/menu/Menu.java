@@ -1,16 +1,22 @@
 package org.ia.menu;
 
+import org.ia.Handler;
+import org.ia.InputManager;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
+
 public class Menu {
 
-
+    Handler handler;
     List<Selectable> menuOptions = new ArrayList<>();
     List<String> textOptions = new ArrayList<>();
 
-
+    public Menu(Handler handler) {
+        this.handler = handler;
+    }
 
     public void show() {
 
@@ -21,9 +27,10 @@ public class Menu {
 
     }
     public int choice() {
+
         System.out.println("Make a choice");
-        Scanner sc = new Scanner(System.in);
-        return sc.nextInt();
+        return handler.inputManager.verifyInt(1, textOptions.size());
+
         //Todo: needs inputmanager
 
     }
